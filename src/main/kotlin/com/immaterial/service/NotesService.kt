@@ -33,4 +33,4 @@ class NotesService {
 
 }
 
-data class Note(var id: Int = 0, val title: String, val note: String)
+data class Note(var id: Int = 0, val title: String, val body: String)
