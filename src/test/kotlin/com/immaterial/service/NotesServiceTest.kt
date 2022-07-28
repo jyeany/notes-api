@@ -12,11 +12,11 @@ class NotesServiceTest {
     fun addNote() {
         val title = "note title"
         val body = "body of note"
-        val toAdd = Note(title = title, note = body)
+        val toAdd = Note(title = title, body = body)
         val result = notesService.addNote(toAdd)
         assertEquals(1, result.size)
         assertEquals(result[0].title, title)
-        assertEquals(result[0].note, body)
+        assertEquals(result[0].body, body)
     }
 
 }
