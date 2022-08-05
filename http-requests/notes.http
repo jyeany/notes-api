@@ -8,8 +8,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "title": "Third",
-    "body": "Note 3"
+    "title": "A Note",
+    "body": "Note Content"
 }
 
 ###

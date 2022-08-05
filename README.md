@@ -10,3 +10,12 @@ Run using:
 ```shell
 ./gradlew run
 ```
+
+## Run Locally with OpenTelemetry autoconfiguration
+Use:
+```shell
+scripts/start-with-otel.sh
+```
+
+Use the Jaeger UI to view traces:
+http://localhost:16686
