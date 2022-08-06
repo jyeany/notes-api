@@ -16,3 +16,13 @@ services:
     environment:
       - COLLECTOR_ZIPKIN_HOST_PORT=:9411
       - COLLECTOR_OTLP_ENABLED=true
+
+  prometheus:
+    image: ubuntu/prometheus:latest
+    ports:
+      - "30090:9090"
+    volumes:
+      - "./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
+      - "./prometheus/alerts.yml:/etc/prometheus/alerts.yml"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
