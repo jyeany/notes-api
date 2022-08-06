@@ -1,5 +1,6 @@
 package com.immaterial.plugins
 
+import com.immaterial.route.metricsRoutes
 import com.immaterial.route.notesRoutes
 import com.immaterial.service.Note
 import com.immaterial.service.NotesService
@@ -14,5 +15,6 @@ fun Application.configureRouting() {
             call.respondText("Hello World!")
         }
         notesRoutes()
+        metricsRoutes()
     }
 }
